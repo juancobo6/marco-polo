@@ -11,13 +11,13 @@ This library provides a simple Python function that implements the Marco Polo ga
 Install the package using pip:
 
 ```bash
-pip install marco-polo
+pip install juancobo6-marco-polo
 ```
 
 Or if you're using uv:
 
 ```bash
-uv add marco-polo
+uv add juancobo6-marco-polo
 ```
 
 ## Requirements
@@ -28,7 +28,7 @@ uv add marco-polo
 ## Usage
 
 ```python
-from marco_polo import marco_polo
+from juancobo6_marco_polo import marco_polo
 
 # Basic usage
 result = marco_polo("Marco")
