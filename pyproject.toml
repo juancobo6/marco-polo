@@ -1,13 +1,15 @@
 [project]
 name = "marco-polo"
 version = "0.1.0"
-description = "Add your description here"
+description = "Python implementation of the game of marco polo."
 readme = "README.md"
 authors = [
     { name = "JuanCobo", email = "juan.cobo@baobabsoluciones.es" }
 ]
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "pandas>=2.3.1",
+]
 
 [build-system]
 requires = ["hatchling"]
