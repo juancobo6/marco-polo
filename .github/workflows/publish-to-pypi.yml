@@ -23,7 +23,7 @@ jobs:
           version: latest
 
       - name: Install build dependencies
-        run: uv pip install --upgrade setuptools setuptools_scm
+        run: uv pip install --system --upgrade setuptools setuptools_scm
 
       - name: Build package
         run: uv build --sdist --wheel
