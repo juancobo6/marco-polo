@@ -16,6 +16,7 @@ dependencies = [
 ]
 
 [tool.setuptools_scm]
+root = ".."
 version_scheme = "post-release"
 local_scheme = "node-and-date"
 
