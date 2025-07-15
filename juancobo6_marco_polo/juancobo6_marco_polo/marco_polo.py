@@ -16,7 +16,7 @@ def marco_polo(name: str) -> str | None:
         name (str): The name to check.
 
     Returns:
-        str | None: "Polo" if the name is "Marco", otherwise None.
+        str | None: "Polo" if the name is "Marco", otherwise None
     """
     _ = pd.DataFrame()
 
