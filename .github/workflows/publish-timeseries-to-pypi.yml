@@ -1,9 +1,9 @@
-name: Publish juancobo6-marco-polo to PyPI
+name: Publish juancobo6-marco-polo-timeseries to PyPI
 
 on:
   push:
     tags:
-      - 'base*'
+      - 'ts*'
 
 jobs:
   publish:
@@ -28,8 +28,8 @@ jobs:
       - name: Install build dependencies
         run: uv pip install --system --upgrade setuptools setuptools_scm
 
-      - name: Build juancobo6-marco-polo package
-        run: uv build --sdist --wheel juancobo6_marco_polo
+      - name: Build juancobo6-marco-polo-timeseries package
+        run: uv build --sdist --wheel juancobo6_marco_polo_timeseries
 
-      - name: Publish juancobo6-marco-polo to PyPI
-        run: uv publish --token ${{ secrets.PYPI_API_TOKEN }} juancobo6_marco_polo/dist/*
+      - name: Publish juancobo6-marco-polo-timeseries to PyPI
+        run: uv publish --token ${{ secrets.PYPI_API_TOKEN }} juancobo6_marco_polo_timeseries/dist/*

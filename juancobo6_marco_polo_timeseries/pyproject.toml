@@ -3,9 +3,9 @@ requires = ["setuptools>=69", "setuptools_scm"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "juancobo6-marco-polo"
+name = "juancobo6-marco-polo-timeseries"
 dynamic = ["version"]
-description = "Python implementation of the game of marco polo."
+description = "Python implementation of the game of marco polo with time dependencies."
 readme = "README.md"
 authors = [
   { name = "JuanCobo", email = "juan.cobo@baobabsoluciones.es" }
@@ -19,5 +19,4 @@ dependencies = [
 root = ".."
 version_scheme = "post-release"
 local_scheme = "node-and-date"
-tag_regex = r"^ts(?P<version>\d+\.\d+\.\d+)$"
 
