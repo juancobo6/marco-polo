@@ -25,9 +25,6 @@ jobs:
         with:
           version: latest
 
-      - name: Install build dependencies
-        run: uv pip install --system --upgrade setuptools setuptools_scm
-
       - name: Build juancobo6-marco-polo package
         run: uv build --sdist --wheel juancobo6_marco_polo
 
