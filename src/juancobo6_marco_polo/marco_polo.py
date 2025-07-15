@@ -6,6 +6,12 @@ import pandas as pd
 def marco_polo(name: str) -> str | None:
     """Returns "Polo" if the name is "Marco", otherwise returns None.
 
+    Example:
+        >>> marco_polo("Marco")
+        "Polo"
+        >>> marco_polo("John")
+        None
+
     Args:
         name (str): The name to check.
 
