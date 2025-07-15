@@ -27,12 +27,14 @@ jobs:
       - name: Install build dependencies
         run: uv pip install --system --upgrade setuptools setuptools_scm
 
-      - name: Build juancobo6-marco-polo package
+      - name: Debug git tags
         run: |
-          cd juancobo6_marco_polo
-          uv build --sdist --wheel
+          git tag --list
+          git describe --tags --always
+          git log --oneline -5
+
+      - name: Build juancobo6-marco-polo package
+        run: uv build --sdist --wheel juancobo6_marco_polo
 
       - name: Publish juancobo6-marco-polo to PyPI
-        run: |
-          cd juancobo6_marco_polo
-          uv publish --token ${{ secrets.PYPI_API_TOKEN }}
+        run: uv publish --token ${{ secrets.PYPI_API_TOKEN }} juancobo6_marco_polo/dist/*
