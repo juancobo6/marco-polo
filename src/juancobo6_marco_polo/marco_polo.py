@@ -16,4 +16,5 @@ def marco_polo(name: str) -> str | None:
 
     if name == "Marco":
         return "Polo"
+
     return None
