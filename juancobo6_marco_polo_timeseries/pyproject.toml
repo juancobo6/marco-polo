@@ -19,4 +19,5 @@ dependencies = [
 root = ".."
 version_scheme = "post-release"
 local_scheme = "node-and-date"
+tag_regex = "^ts(?P<version>\\d+\\.\\d+\\.\\d+)$"
 
